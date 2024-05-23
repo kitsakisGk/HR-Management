@@ -1,0 +1,53 @@
+/* Default CSS Stylesheet for a new Web Application project */
+@media screen
+{
+	#divToPrintPagia
+	{
+		display:none;
+	}
+
+}
+
+BODY
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: normal;
+	letter-spacing: normal;
+	text-transform: none;
+	word-spacing: normal;
+}
+
+P
+{
+	font-size: 8pt;
+}
+
+TABLE
+{
+	font-size: 8pt;
+}
+
+A:link
+{
+	text-decoration: none;
+	color: #3333cc;
+}
+
+A:visited
+{
+	text-decoration: none;
+	color: #333399;
+}
+
+A:active
+{
+	text-decoration: none;
+	color: #333399;
+}
+
+A:hover
+{
+	text-decoration: underline;
+	color: Black;
+}

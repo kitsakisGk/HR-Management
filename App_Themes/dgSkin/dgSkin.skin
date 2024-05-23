@@ -1,0 +1,52 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+
+
+
+--%>
+
+
+<asp:DataGrid runat="server" SkinId="DataGridSkin" CellPadding="3" BorderColor="Gray">
+   <HeaderStyle Font-Bold="True" ForeColor="White" BackColor="#00A8B0" Height="20px"></HeaderStyle>
+   <AlternatingItemStyle BackColor="WhiteSmoke"></AlternatingItemStyle> 
+</asp:DataGrid>
+
+
+<asp:GridView runat="server" SkinId="gridviewSkin" CellPadding="3" BorderColor="Gray">
+   <HeaderStyle BackColor="#00A8B0" ForeColor="White" Height="20px" />
+   <AlternatingRowStyle BackColor="WhiteSmoke" />
+   <SelectedRowStyle BackColor="#FFCC33" />
+   <EditRowStyle BackColor="#FFCC33" />
+</asp:GridView>
+
+
+<asp:DetailsView runat="server" SkinId="gridviewSkin" BorderWidth="0px" CellPadding="3">
+       <AlternatingRowStyle BackColor="WhiteSmoke" />
+</asp:DetailsView>
+
+
+<asp:TextBox runat="server" BorderWidth="1px" BorderColor="Gray" Font-Names="Verdana" Font-Size="9pt">
+</asp:TextBox>
+
+
+<asp:Calendar runat="server">
+    <TitleStyle BackColor="#00A8B0" Font-Bold="True" ForeColor="White" Height="20px" />
+    <SelectedDayStyle BackColor="#FFCC33" Font-Bold="True" ForeColor="Black" />
+    <WeekendDayStyle BackColor="#FFE0C0" />
+    <TodayDayStyle BackColor="#CCCCCC" ForeColor="Black" Font-Bold="True" />
+</asp:Calendar>
+
+
+

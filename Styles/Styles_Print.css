@@ -1,0 +1,22 @@
+/* Default CSS Stylesheet for a new Web Application project */
+@media print
+{
+	#divPageBreak
+	{
+		page-break-after:always;
+	}
+
+	TABLE
+	
+	{
+		text-align:justify;
+		font-family:Arial;
+		font-size: 12pt;
+		font-weight:normal;
+		letter-spacing: normal;
+		text-transform: none;
+		word-spacing: normal;
+	}
+
+}
+
