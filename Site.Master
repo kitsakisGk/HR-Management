@@ -1,0 +1,82 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" Codebehind="Site.master.vb" Inherits="WebSFA.Site" %>
+<%@ Register Src="Menus/MenuPreselling.ascx" TagName="MenuPreselling" TagPrefix="useuc6" %>
+<%@ Register Src="Menus/ExvanMenuSalesman.ascx" TagName="ExvanMenuSalesman" TagPrefix="uc7" %>
+<%@ Register Src="Menus/MenuAdmin.ascx" TagName="MenuAdmin" TagPrefix="uc5" %>
+<%@ Register Src="Menus/MenuLeft.ascx" TagName="MenuLeft" TagPrefix="uc2" %>
+<%@ Register Src="Menus/MenuSalesman.ascx" TagName="MenuSalesman" TagPrefix="uc4" %>
+<%@ Register Src="Menus/MenuInspector.ascx" TagName="MenuInspector" TagPrefix="uc3" %>
+<%@ Register Src="Controls/UserDataControl.ascx" TagName="UserDataControl" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>HR Management</title>
+
+    <script language="javascript" src="Scripts/MenuScript.js" type="text/javascript"></script>
+
+    <link href="Styles/Styles.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style4 {
+            width: 161px;
+        }
+        .auto-style5 {
+            width: 175px;
+        }
+        .auto-style6 {
+            width: 216px;
+            height: 150px;
+        }
+        .auto-style7 {
+            width: 217px;
+        }
+    </style>
+</head>
+<body>
+    <form id="MasterForm" runat="server">
+       <table id="HeaderTopTable" cellspacing="0" cellpadding="0" width="100%" border="0">
+            <tr>
+                <td align="center" background="Images/Menu_Buttons/blue_bar_2.gif" colspan="2" height="10"
+                    nowrap="nowrap" rowspan="1" valign="bottom">
+                </td>
+            </tr>
+            <tr>
+                <td valign="bottom" nowrap align="center" bgcolor="#00a8b0" rowspan="3" class="auto-style5">
+                    <img alt="" src="Images/Delta_Logo.png" class="auto-style6"></td>
+                <td nowrap width="100%" bgcolor="#00a8b0" height="30px" align="center">
+                </td>
+            </tr>
+            <tr>
+                <td nowrap bgcolor="#d31236" colspan="2" height="25" align="center" style="border-top: #ffffff 1px solid; border-bottom: #ffffff 1px solid; border-right: #ffffff 1px solid;">
+                   <uc5:MenuAdmin ID="MenuAdminControl" runat="server" width="auto" />
+                </td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#00a8b0" colspan="2" height="30px">
+                    <b><asp:Label ID="Label1" runat="server" style=" text-align:center; max-width:fit-content; background-color:#00a8b0; border:none; color:black; font-size:medium"></asp:Label></b>
+                </td>
+            </tr>
+        </table>
+        <table id="MenusTable" cellspacing="0" cellpadding="0" width="100%" bgcolor="#00a8b0"
+            border="0">
+        </table>
+        
+        <table id="MenuLeftTable" cellspacing="0" cellpadding="0" width="100%" border="0">
+            <tr>
+                <td valign="top" bgcolor="#00a8b0" class="auto-style7">
+                    <uc2:MenuLeft ID="MenuLeft" runat="server" />
+                </td>
+                <td valign="top">
+                    <table id="ContentPlaceHolderTable" cellspacing="1" cellpadding="1" width="100%"
+                        border="0">
+                        <tr>
+                            <td>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
