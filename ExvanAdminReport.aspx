@@ -34,29 +34,37 @@
                 });
             });  </script>
         <br />
-        <table>
-            <asp:Button ID="btnExportToAscii" runat="server" Visible="True" Text="Export" Font-Size="Medium"
+
+           <asp:GridView ID="writenTable" runat="server" AutoGenerateColumns="False" 
+              OnRowDataBound="writenTable_RowDataBound" SkinID="gridviewSkin" 
+              CellPadding="3" EnableModelValidation="True" 
+              BackColor="White" BorderColor="#999999" BorderStyle="Solid" 
+              BorderWidth="1px" ForeColor="Black" GridLines="Vertical">
+                <AlternatingRowStyle BackColor="#CCCCCC" />
+                <Columns>
+            <asp:BoundField DataField="Section" HeaderText="Department" 
+                        ItemStyle-HorizontalAlign="Left">
+            <ItemStyle HorizontalAlign="Left"></ItemStyle>
+                </asp:BoundField>
+                <asp:TemplateField HeaderText="Sended">
+            <ItemTemplate>
+                <asp:Literal ID="litSended" runat="server" Text='<%# Eval("Sended") %>'></asp:Literal>
+            </ItemTemplate>
+            <ItemStyle HorizontalAlign="Center"></ItemStyle>
+        </asp:TemplateField>
+        </Columns>
+            <FooterStyle BackColor="#CCCCCC" />
+            <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
+            <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+            <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+           </asp:GridView>
+
+        <br />
+
+        <asp:Button ID="btnExportToAscii" runat="server" Visible="False" Text="Export" Font-Size="Medium"
              style="position:center; text-align:center; border-radius: 10px; padding: 10px 10px; background-color: #EDF4F5; color: #000000; border: 1px solid #000000; cursor: pointer; transition: background-color 0.7s, border-color 0.3s;" Height="45px" Width="120px"/>
 
-            <br />
 
-            <asp:GridView ID="writenTable" runat="server" AutoGenerateColumns="False" SkinID="gridviewSkin" CellPadding="4" EnableModelValidation="True" ForeColor="#333333" GridLines="None" Height="160px" style="margin-left: 0px" Width="715px">
-            <AlternatingRowStyle BackColor="White" />
-            <Columns>
-                <asp:BoundField DataField="SH_Date" HeaderText="Ημερομηνία" ItemStyle-HorizontalAlign="Center"/>
-                <asp:BoundField DataField="EmployeeID" HeaderText="ID Εργαζομένου" ItemStyle-HorizontalAlign="Center"/>
-                <asp:BoundField DataField="EmployeeName" HeaderText="Ονοματεπώνυμο" ItemStyle-HorizontalAlign="Center"/>
-                <asp:BoundField DataField="Shift_No" HeaderText="Κώδ. Βάρδια" ItemStyle-HorizontalAlign="Center"/>
-            </Columns>
-            <EditRowStyle BackColor="#7C6F57" />
-            <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
-            <HeaderStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
-            <PagerStyle BackColor="#666666" ForeColor="White" HorizontalAlign="Center" />
-            <RowStyle BackColor="#E3EAEB" />
-            <SelectedRowStyle BackColor="#C5BBAF" Font-Bold="True" ForeColor="#333333" />
-        </asp:GridView>
-
-        </table>    
 
         <script>
             document.addEventListener("DOMContentLoaded", function () {

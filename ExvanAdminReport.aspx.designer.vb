@@ -41,15 +41,6 @@ Partial Public Class ExvanAdminReport
     Protected WithEvents lnkbtnShow As Global.System.Web.UI.WebControls.LinkButton
 
     '''<summary>
-    '''btnExportToAscii control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents btnExportToAscii As Global.System.Web.UI.WebControls.Button
-
-    '''<summary>
     '''writenTable control.
     '''</summary>
     '''<remarks>
@@ -57,4 +48,13 @@ Partial Public Class ExvanAdminReport
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents writenTable As Global.System.Web.UI.WebControls.GridView
+
+    '''<summary>
+    '''btnExportToAscii control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnExportToAscii As Global.System.Web.UI.WebControls.Button
 End Class

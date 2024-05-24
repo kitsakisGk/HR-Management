@@ -31,13 +31,14 @@
 
     Protected Sub lnkbtnShow_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles lnkbtnShow.Click
         BindData()
+        btnExportToAscii.Visible = True
     End Sub
 
     Private Sub BindData()
         Try
             ' Initialize the SQL command for the stored procedure
             Dim command As SqlClient.SqlCommand
-            command = DatabaseWSFA.GetCommand("WritenShifts")
+            command = DatabaseWSFA.GetCommand("WritenShifts_2")
 
             ' Add the parameters for the date range
             command.Parameters.Add("@FromDate", SqlDbType.Date).Value = CDate(Me.DateFrom.Text)
@@ -46,6 +47,9 @@
             ' Retrieve the data into a DataTable
             Dim CusData As Data.DataTable
             CusData = DatabaseWSFA.RetrieveDataTable(command)
+
+            ' Debug: Check the data count
+            System.Diagnostics.Debug.WriteLine("Rows retrieved: " & CusData.Rows.Count)
 
             ' Bind the data to the GridView
             If CusData.Rows.Count > 0 Then
@@ -63,7 +67,21 @@
             Me.writenTable.DataBind()
             Me.writenTable.Visible = False
             ' Log the error or display a message
+            System.Diagnostics.Debug.WriteLine("Error: " & ex.Message)
         End Try
+    End Sub
+
+    Protected Sub writenTable_RowDataBound(sender As Object, e As GridViewRowEventArgs) Handles writenTable.RowDataBound
+        If e.Row.RowType = DataControlRowType.DataRow Then
+            Dim litSended As Literal = CType(e.Row.FindControl("litSended"), Literal)
+            If litSended IsNot Nothing Then
+                If litSended.Text = "NAI" Then
+                    litSended.Text = "<span style='color:green;'><b>NAI</b></span>"
+                ElseIf litSended.Text = "ΟΧΙ" Then
+                    litSended.Text = "<span style='color:red;'><b>ΟΧΙ</b></span>"
+                End If
+            End If
+        End If
     End Sub
 
 
