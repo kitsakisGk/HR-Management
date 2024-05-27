@@ -22,7 +22,7 @@ Managers can upload the files here. After uploading the file will pop up if it i
 <img width="930" height="400" alt="File_uploaded" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/21575020-5f96-4e0d-ac6e-cba610d17133">
 The file has the following form when uploaded 
 <br>
-<img width="480" height="100" alt="FileFormSendToHR" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/3ad48f68-19bf-4d3b-859d-14518773a820">
+<img width="550" height="70" alt="FileFormSendToHR" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/3ad48f68-19bf-4d3b-859d-14518773a820">
 
 
 ##### About the file
