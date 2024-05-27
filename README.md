@@ -10,7 +10,6 @@ After selecting the date from and to that we want to see the departments if they
 <img width="475" height="400" alt="clickingShowUpBtn" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/ae6b2a18-f9b8-4d84-b2c0-40b94bb53173">
 
 It will pop up also the button export to download the file which contains every department's employee. 
-
 It looks like this in the excel document 
 <br>
 <img width="450" height="150" alt="exported_file" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/b2e78718-707e-4c99-b2ce-1539b38db675">
@@ -22,7 +21,7 @@ Managers can upload the files here. After uploading the file will pop up if it i
 <img width="930" height="400" alt="File_uploaded" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/21575020-5f96-4e0d-ac6e-cba610d17133">
 The file has the following form when uploaded 
 <br>
-<img width="550" height="50" alt="FileFormSendToHR" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/3ad48f68-19bf-4d3b-859d-14518773a820">
+<img width="550" height="70" alt="FileFormSendToHR" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/3ad48f68-19bf-4d3b-859d-14518773a820">
 
 
 #### About the file
