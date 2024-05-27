@@ -8,7 +8,7 @@ It is a real-world system for the HR department of DeltaFoods SA. A faster way t
 <img width="1000" height="400" alt="admin_page" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/ef3420bd-fcc5-43cb-bbc4-7e55a31f17b0">
 After selecting the date from and to that we want to see the departments if they uploaded or not the files, press "Εμφανιση" (Show), we see a table like the following:
 <br>
-<img width="475" height="400" alt="clickingShowUpBtn" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/ae6b2a18-f9b8-4d84-b2c0-40b94bb53173">
+<img width="500" height="320" alt="clickingShowUpBtn" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/ae6b2a18-f9b8-4d84-b2c0-40b94bb53173">
 
 It will pop up also the button export to download the file which contains every department's employee. 
 It looks like this in the excel document: 
