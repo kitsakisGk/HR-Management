@@ -1,5 +1,5 @@
 # HR-Management
-It is a real-world system for the HR department of DeltaFoods SA. A faster way to upload, download and manage the employess of the company about their payrolls, their time offs and their hours of work. 
+A faster way to upload, download and manage the employess of the company about their payrolls, their time offs and their hours of work. 
 
 ### Login page
 <img width="930" height="400" alt="Login" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/553d4c7c-e4ba-4169-b421-7f9298a122a2">
