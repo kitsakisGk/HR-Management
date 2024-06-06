@@ -8,7 +8,7 @@ A faster way to upload, download and manage the employess of the company about t
 <img width="1000" height="500" alt="admin_page" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/fb140069-2ebf-4472-bfb0-c634593174c3">
 After selecting the date from and to that we want to see the departments if they uploaded or not the files, press "Εμφανιση" (Show), we see a table like the following:
 <br>
-<img width="800" height="450" alt="clickingShowUpBtn" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/5d639a54-4f37-4743-b52d-8bc640cfaaa0">
+<img width="800" height="600" alt="clickingShowUpBtn" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/5d639a54-4f37-4743-b52d-8bc640cfaaa0">
 
 It will pop up also the button export to download the file which contains every department's employee. 
 It looks like this in the excel document: 
