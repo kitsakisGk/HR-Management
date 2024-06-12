@@ -2,13 +2,14 @@
 A faster way to upload, download and manage the employess of the company about their payrolls, their time offs and their hours of work. 
 
 ### Login page
-<img width="1000" height="500" alt="Login" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/97fc6d1c-180a-40b6-8a01-7a06f8a2dddd">
+<img alt="Login" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/180d62fb-8434-427f-a6e8-7de12164832d">
 
 ### Admin page
-<img width="1000" height="500" alt="admin_page" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/fb140069-2ebf-4472-bfb0-c634593174c3">
+
+<img alt="admin_page" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/c3d1ad2a-d79d-4d66-b986-55e3a20e4632">
 After selecting the date from and to that we want to see the departments if they uploaded or not the files, press "Εμφανιση" (Show), we see a table like the following:
 <br>
-<img width="800" height="600" alt="clickingShowUpBtn" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/5d639a54-4f37-4743-b52d-8bc640cfaaa0">
+<img alt="clickingShowUpBtn" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/4c3016d9-6a16-466c-a4c2-89729e6442f5">
 
 It will pop up also the button export to download the file which contains every department's employee. 
 It looks like this in the excel document: 
@@ -16,10 +17,10 @@ It looks like this in the excel document:
 <img width="450" height="150" alt="exported_file" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/a30bbe25-e23f-410a-ac5e-51381d48f47d">
 
 ### Employee page
-<img width="1000" height="500" alt="File_upload" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/dc966e15-ee06-416a-91bc-ec3c9a6e1592">
+<img alt="File_upload" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/7128eaf9-fbb3-4b72-908a-fde88628f7e4">
 <br>
 Managers can upload the files here. After uploading the file will pop up if it is correct. If not, will show a wrong message. 
-<img width="1000" height="500" alt="File_uploaded" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/c044edd2-7737-4b8c-b5d6-d77a368f5efe">
+<img alt="File_uploaded" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/fb12e1d0-6a49-4abb-b16c-139ef6c67b6d">
 The file has the following form when uploaded 
 <br>
 <img width="550" height="70" alt="FileFormSendToHR" src="https://github.com/kitsakisGk/HR-Management/assets/57558604/5ce57ce8-832a-4e3a-b7fe-1605c471e153">
